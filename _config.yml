@@ -17,7 +17,7 @@ keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your 
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🔥 # the emoji used as the favicon
-url: #https://ramanpreet9.github.io # the base hostname & protocol for your site
+url: https://ramanpreet9.github.io # the base hostname & protocol for your site
 baseurl: #/al-folio # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -132,8 +132,8 @@ kramdown:
 include: ['_pages']
 exclude:
   - bin
-  #- Gemfile
-  #- Gemfile.lock
+  - Gemfile
+  - Gemfile.lock
   - vendor
 keep_files:
   - CNAME
@@ -150,7 +150,6 @@ plugins:
   - jekyll-imagemagick
   - jekyll-paginate-v2
   - jekyll/scholar
-  - jekyll-scholar
   - jekyll-sitemap
   - jekyll-target-blank
   - jekyll-twitter-plugin
@@ -176,7 +175,7 @@ remove_HTML_comments: false
 beautify: false # This function has conflict with the code snippets, they can be displayed incorrectly
 
 # HTML minify (_plugins/minify.rb) Thanks to: https://www.ffbit.com/blog/2021/03/17/html-minification-in-jekyll.html
-minify: false
+minify: true
 
 rb: true
 
