@@ -132,8 +132,8 @@ kramdown:
 include: ['_pages']
 exclude:
   - bin
-  - Gemfile
-  - Gemfile.lock
+  #- Gemfile
+  #- Gemfile.lock
   - vendor
 keep_files:
   - CNAME
@@ -178,6 +178,8 @@ beautify: false # This function has conflict with the code snippets, they can be
 # HTML minify (_plugins/minify.rb) Thanks to: https://www.ffbit.com/blog/2021/03/17/html-minification-in-jekyll.html
 minify: false
 
+rb: true
+
 # CSS/SASS minify
 sass:
   style: compressed
@@ -206,7 +208,7 @@ scholar:
   last_name: Pahwa
   first_name: [Ramanpreet]
 
-  style: ieee-with-url #apa
+  style: apa #ieee-with-url #apa
   locale: en
 
   source: ./_bibliography/
@@ -231,21 +233,21 @@ scholar:
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
 
-#imagemagick:
-#  enabled: true
-#  widths:
-#    - 480
-#    - 800
-#    - 1400
-#  input_directories:
-#    - assets/img/
-#  input_formats:
-#    - ".jpg"
-#    - ".jpeg"
-#    - ".png"
-#    - ".tiff"
-#  output_formats:
-#    webp: "-quality 75%"
+imagemagick:
+  enabled: true
+  widths:
+    - 480
+    - 800
+    - 1400
+  input_directories:
+    - assets/img/
+  input_formats:
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
+    - ".tiff"
+  output_formats:
+    webp: "-quality 75%"
 
 # -----------------------------------------------------------------------------
 # Jekyll Diagrams
