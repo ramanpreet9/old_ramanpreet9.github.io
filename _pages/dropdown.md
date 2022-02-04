@@ -9,6 +9,6 @@ children:
     - title: divider
     - title: projects
       permalink: /projects/
-	- title: teaching
+	  - title: teaching
       permalink: /teaching/
 ---
